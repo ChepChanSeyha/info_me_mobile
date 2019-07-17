@@ -1,21 +1,26 @@
 import 'package:flutter/material.dart';
 
-class NewsScreen extends StatelessWidget{
+class NewsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('News', style: TextStyle(
-          color: Colors.teal,
-        ),),
+        title: Text(
+          'News',
+          style: TextStyle(
+            color: Colors.teal,
+          ),
+        ),
         backgroundColor: Colors.white,
-        leading: Icon(Icons.question_answer, color: Colors.teal,),
+        leading: Icon(
+          Icons.question_answer,
+          color: Colors.teal,
+        ),
       ),
       body: _body(),
     );
   }
-
 }
 
 Widget _body() {

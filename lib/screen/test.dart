@@ -1,21 +1,26 @@
 import 'package:flutter/material.dart';
 
-class TestScreen extends StatelessWidget{
+class TestScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test', style: TextStyle(
-          color: Colors.teal,
-        ),),
+        title: Text(
+          'Test',
+          style: TextStyle(
+            color: Colors.teal,
+          ),
+        ),
         backgroundColor: Colors.white,
-        leading: Icon(Icons.chrome_reader_mode, color: Colors.teal,),
+        leading: Icon(
+          Icons.chrome_reader_mode,
+          color: Colors.teal,
+        ),
       ),
       body: _body(),
     );
   }
-
 }
 
 Widget _body() {
@@ -36,7 +41,10 @@ Widget _body() {
                 ),
               )
             ],
-          )
+          ),
+          Row(
+
+          ),
         ],
       ));
 }
