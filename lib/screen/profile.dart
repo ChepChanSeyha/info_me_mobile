@@ -6,58 +6,68 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
-          'Profile',
-          style: TextStyle(
-            color: Colors.teal,
+        iconTheme: IconThemeData(color: Colors.teal),
+        title: Center(
+          child: Text(
+            'Profile',
+            style: TextStyle(
+              color: Colors.teal,
+            ),
           ),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.edit,
+              color: Colors.teal,
+            ),
+            onPressed: () {},
+          ),
+        ],
         backgroundColor: Colors.white,
-        leading: Icon(
-          Icons.person_outline,
-          color: Colors.teal,
-        ),
       ),
       body: Center(
         child: Column(
           children: <Widget>[
             Container(
               decoration: BoxDecoration(),
-              margin: EdgeInsets.all(16),
+              margin: EdgeInsets.only(left: 16,right: 16,top: 16),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
+                      CircleAvatar(
+                        radius:60,
+                        backgroundColor: Colors.black,
+                        child: CircleAvatar(
+                          radius: 58,
+                          backgroundImage: AssetImage('images/myprofile.jpg'),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
                       Text(
-                        'Page Profile',
+                        'Oeng Mengthong',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold
                         ),
                       ),
-                      FlatButton(
-                        color: Colors.orange,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Text('Log Out'),
-                          ],
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => LoginScreen(),
-                            ),
-                          );
-                        },
-                      )
                     ],
-                  )
+                  ),
+                  SizedBox(
+                    height: 16,
+                  ),
+                  Divider(
+                    color: Colors.teal,
+                  ),
                 ],
               ),
             ),

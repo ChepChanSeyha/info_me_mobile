@@ -5,19 +5,19 @@ class NewsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'News',
-          style: TextStyle(
-            color: Colors.teal,
-          ),
-        ),
-        backgroundColor: Colors.white,
-        leading: Icon(
-          Icons.question_answer,
-          color: Colors.teal,
-        ),
-      ),
+//      appBar: AppBar(
+//        title: Text(
+//          'News',
+//          style: TextStyle(
+//            color: Colors.teal,
+//          ),
+//        ),
+//        backgroundColor: Colors.white,
+//        leading: Icon(
+//          Icons.question_answer,
+//          color: Colors.teal,
+//        ),
+//      ),
       body: _body(),
     );
   }

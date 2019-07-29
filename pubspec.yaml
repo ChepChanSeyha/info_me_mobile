@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  icon_shadow: ^1.0.1
+
   cupertino_icons: ^0.1.2
 
 
@@ -22,3 +24,10 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - images/
+    - images/location/
+    - images/subject/
+    - images/private/
+    - images/public/

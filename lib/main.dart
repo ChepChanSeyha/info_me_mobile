@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Authorization/login.dart';
-import 'Bottom_Navigation_Bar/buttom_nav.dart';
+
 
 void main() => runApp(MyApp()); //this is a root of widget tree that call class MyApp() for run
 
